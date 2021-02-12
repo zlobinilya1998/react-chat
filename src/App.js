@@ -1,6 +1,6 @@
 import "./style/App.scss";
 
-let ws = new WebSocket(`wss:`);
+// let ws = new WebSocket(`wss:`);
 
 function App() {
   return <a href="/"></a>;
