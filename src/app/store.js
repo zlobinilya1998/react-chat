@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { createStore } from "redux";
 
-export default configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+let initialState = {
+  counter: 1,
+};
+
+let appReducer = (state = initialState, action) => {
+  return state;
+};
+let store = createStore(appReducer);
+export default store;
+window.store = store;
